@@ -18,13 +18,18 @@ script.on_nth_tick(3600, function(event)
   local timeout = settings.global["timed-peace-minutes"].value
   local nauvis = game.surfaces.nauvis
 
+  if nauvis.peaceful_mode == false then
+    -- Peace already disabled, unregister handler.
+    script.on_nth_tick(3600, nil)
+    return
+  end
 
   if elapsed >= timeout then
     -- Disable peace
-    printAll("Peace timeout reached. Disabling peace.")
+    printAll("Peace timeout reached. Disabling peace. You didn't forget to build guns, did you?")
     nauvis.peaceful_mode = false
 
-    -- Unregister handler
+    -- We're done, unregister handler
     script.on_nth_tick(3600, nil)
   end
 end)
