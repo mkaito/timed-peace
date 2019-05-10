@@ -1,8 +1,9 @@
-v0.0.4
+v0.0.5
+- Add a changelog
 
+v0.0.4
 - Remove tick handler if peace already disabled.
 
 v0.0.3
-
 - Better handling of console printing.
 - Remove superfluous debug print() statements.
