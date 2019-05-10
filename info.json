@@ -1,0 +1,13 @@
+{
+  "name": "timed-peace",
+  "version": "0.0.1",
+  "title": "Timed Peace",
+  "author": "mkaito",
+  "contact": "",
+  "homepage": "",
+  "factorio_version": "0.17",
+  "dependencies": [
+    "base >= 0.17"
+    ],
+    "description": "Disable Peaceful mode after a configurable time period."
+}
