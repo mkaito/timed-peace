@@ -2,6 +2,8 @@
 
 This mod will disable peaceful mode after a given timeout.
 
+# You still have to enable peaceful mode in map generation settings
+
 ## Use case
 
 When playing with batshit crazy enemy settings, the later stages of the game
